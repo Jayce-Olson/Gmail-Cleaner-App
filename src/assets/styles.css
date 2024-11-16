@@ -1,0 +1,194 @@
+/* General styles */
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.homepage {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Header section (contains the sign-out button) */
+.header {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+/* Sign out button */
+.sign-out-button {
+    padding: 8px 16px;
+    font-size: 14px;
+    color: white;
+    background-color: #d93025;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.sign-out-button:hover {
+    background-color: #c62828;
+    transform: scale(1.05);
+}
+/* Checkbox container (Needs to be flex so the options can be side by side */
+.checkbox-container {
+    display: flex; 
+    gap: 20px; 
+    margin-bottom: 20px; 
+  }
+
+  .checkbox-container .option {
+    flex: 1;
+    min-width: 250px;
+  }
+
+/* Options container (contains all the input options) */
+.options-container {
+    background: #ffffff;
+    border: 1px solid #000;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Individual option (date, email, checkboxes) */
+.option {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.option label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #444;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Checkboxes */
+.option input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: #4285F4;
+}
+
+/* Text and date input fields */
+.option input[type="text"],
+.option input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: #ffffff;
+    color: #333;
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.option input[type="text"]:focus,
+.option input[type="date"]:focus {
+    border-color: #66a6ff;
+    box-shadow: 0 0 10px rgba(102, 166, 255, 0.5);
+}
+
+/* Authentication button */
+.auth-button {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4285F4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.auth-button:hover {
+    background-color: #357ae8;
+    box-shadow: 0 0 15px rgba(66, 133, 244, 0.5);
+    transform: translateY(-3px);
+}
+
+/* Email preview textarea */
+.email-preview {
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: #333;
+    font-size: 14px;
+    transition: box-shadow 0.3s ease;
+    scroll-behavior: smooth;
+}
+
+.email-preview:focus {
+    box-shadow: 0 0 10px rgba(66, 133, 244, 0.5);
+}
+
+/* Info buttons (for tooltips) */
+.option-container {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.info-button {
+    display: inline-block;
+    background-color: #4285F4;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.tooltip {
+    visibility: hidden;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    width: 240px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.info-button:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+#logo{
+    /* display: flex;
+     justify-content: center;
+     align-items: center;      */
+     padding: 10px; 
+     width: 300px;
+    height: auto;
+}
