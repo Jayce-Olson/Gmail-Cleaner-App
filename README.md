@@ -1,6 +1,6 @@
 # Gmail Cleaner Web App
 
-This is the first web app I ever made. It was made before I even attended college. With that said, I have learned a lot since the creation of this project. My code no longer looks like spagetti, is maintainable, and doesn't involve using JavaScript web sockets for a backend server. I just wanted to inform you before you dive into this code that this project was made when I was still a Kindergarden level developer. If you would like to see code that is more accurate to my current skill level, I have some more projects listed on this Github account. Thank you!
+This is the first web app I ever made. It was made before I even attended college. With that said, I have learned a lot since the creation of this project. My code no longer looks like spagetti, is MUCH more maintainable. I just wanted to inform you before you dive into this code that this project was made when I was still a Kindergarden level developer. If you would like to see code that is more accurate to my current skill level, I have some more projects listed on this Github account. Thank you!
 
 ## Overview:
 
